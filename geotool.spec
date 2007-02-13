@@ -1,5 +1,5 @@
 Summary:	geotool - convert IP adress to country name using GeoIP
-Summary(pl.UTF-8):   geotool - zamiana adresu IP na nazwę kraju przy użyciu GeoIP
+Summary(pl.UTF-8):	geotool - zamiana adresu IP na nazwę kraju przy użyciu GeoIP
 Name:		geotool
 Version:	0.9.1
 Release:	1
