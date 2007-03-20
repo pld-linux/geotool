@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
 # Source0-md5:	abe22863b4ba5061683cd3db660a82d8
+Patch0:		%{name}-lib64.patch
 URL:		http://rsstool.berlios.de/
 BuildRequires:	GeoIP-devel
 Requires:	GeoIP
@@ -24,6 +25,7 @@ krajów wraz z ich zakresami IP (guarding.p2p).
 
 %prep
 %setup -q -n %{name}-%{version}-src
+%patch0 -p1
 
 %build
 cd src
