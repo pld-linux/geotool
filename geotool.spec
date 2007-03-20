@@ -1,5 +1,5 @@
 Summary:	geotool - convert IP adress to country name using GeoIP
-Summary(pl.UTF-8):	geotool - zamiana adresu IP na nazwÄ™ kraju przy uÅ¼yciu GeoIP
+Summary(pl):	geotool - zamiana adresu IP na nazwê kraju przy u¿yciu GeoIP
 Name:		geotool
 Version:	0.9.1
 Release:	1
@@ -7,6 +7,7 @@ License:	GPL
 Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
 # Source0-md5:	abe22863b4ba5061683cd3db660a82d8
+Patch0:		%{name}-lib64.patch
 URL:		http://rsstool.berlios.de/
 BuildRequires:	GeoIP-devel
 Requires:	GeoIP
@@ -17,13 +18,14 @@ geotool inserts countries into the output of numerous command line
 network tools, and reverses GeoIP.dat into a list of countries with
 their IP ranges (guarding.p2p).
 
-%description -l pl.UTF-8
-geotool wstawia nazwy krajÃ³w w wyjÅ›cie wielu narzÄ™dzi sieciowych
-dziaÅ‚ajÄ…cych z linii poleceÅ„ oraz potrafi zamieniÄ‡ GeoIP.dat na listÄ™
-krajÃ³w wraz z ich zakresami IP (guarding.p2p).
+%description -l pl
+geotool wstawia nazwy krajów w wyj¶cie wielu narzêdzi sieciowych
+dzia³aj±cych z linii poleceñ oraz potrafi zamieniæ GeoIP.dat na listê
+krajów wraz z ich zakresami IP (guarding.p2p).
 
 %prep
 %setup -q -n %{name}-%{version}-src
+%patch0 -p1
 
 %build
 cd src
