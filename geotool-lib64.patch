@@ -1,0 +1,10 @@
+--- geotool-0.9.1-src/src/configure.in~	2006-08-12 13:28:47.000000000 +0200
++++ geotool-0.9.1-src/src/configure.in	2007-03-20 12:06:16.631074003 +0100
+@@ -267,6 +267,7 @@
+         defined AMIGA || defined __APPLE__      // Mac OS X actually
+ // GNU/Linux, Solaris, FreeBSD, OpenBSD, Cygwin, BeOS, Amiga, Mac (OS X)
+   "./",
++  "/usr/lib64/",
+   "/usr/lib/",
+   "/usr/local/lib/",
+ #else // DJGPP, Win32
