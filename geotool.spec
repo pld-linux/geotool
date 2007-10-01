@@ -8,7 +8,7 @@ Group:		Applications/Text
 Source0:	http://download.berlios.de/rsstool/%{name}-%{version}-src.tar.gz
 # Source0-md5:	abe22863b4ba5061683cd3db660a82d8
 Patch0:		%{name}-lib64.patch
-URL:		http://rsstool.berlios.de/
+URL:		http://rsstool.y7.ath.cx/
 BuildRequires:	GeoIP-devel
 Requires:	GeoIP
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
