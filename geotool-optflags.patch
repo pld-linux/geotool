@@ -1,0 +1,12 @@
+--- geotool-0.9.1-src/src/Makefile~	2006-08-12 15:25:37.000000000 +0300
++++ geotool-0.9.1-src/src/Makefile	2008-01-15 00:51:26.463561114 +0200
+@@ -1,7 +1,8 @@
+ .PHONY: all clean distclean install uninstall
+ 
+ CC=gcc
+-CFLAGS=-I. -Wall -W -O3 -DHAVE_CONFIG_H
++CFLAGS=-Wall -W -O3
++CFLAGS=$(OPTFLAGS) -I. -DHAVE_CONFIG_H
+ LDFLAGS=-s
+ TARGET=geotool
+ 
