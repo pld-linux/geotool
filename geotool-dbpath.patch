@@ -1,0 +1,11 @@
+--- geotool-0.9.1-src/src/geotool_defines.h~	2008-01-15 00:49:28.000000000 +0200
++++ geotool-0.9.1-src/src/geotool_defines.h	2008-01-15 00:49:29.264815732 +0200
+@@ -25,7 +25,7 @@
+ 
+ #define GEOTOOL_VERSION_S "0.9.1"
+ #define ARGS_MAX 128
+-#define GEOTOOL_GEOIP_DATABASE "GeoIP.dat"
++#define GEOTOOL_GEOIP_DATABASE "/usr/share/GeoIP/GeoIP.dat"
+ #define MAXBUFSIZE 32768
+ 
+ enum {
