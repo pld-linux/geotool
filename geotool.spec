@@ -27,9 +27,9 @@ krajów wraz z ich zakresami IP (guarding.p2p).
 
 %prep
 %setup -q -n %{name}-%{version}-src
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 
 %build
 cd src
